@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>14 Regions and States of Myanmar</title>
+    <style>
+        
+        .region-info {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: hsl(0, 94%, 50%);
+        }
+
+        .region-info:target {
+            display: block;
+        }
+
+        .region-info:target h2 {
+            color: #d35400;
+        }
+
+        img[usemap] {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="assignment2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <h1>14 Regions and States of Myanmar</h1>
+
+    <p>Click on a region/state in the map below to view its details:</p>
+
+    <!-- Myanmar Map with Image Map -->
+    <img src="images/assignment2.jpg" alt="Myanmar Map" usemap="#mmap" width="500" height="900">
+
+    <map name="mmap">
+        <area shape="poly" coords="291,26,271,90,340,126,288,234,284,238,228,178,237,100,339,91,337,73"
+            alt="Kachin State" href="#kachin">
+
+        <area shape="poly" coords="270,90,254,69,190,113,172,167,152,232,152,244,148,244,148,259,141,282,150,290,152,301,160,306,165,320,181,323,190,325,195,335,192,335,192,344,197,340,198,332,203,321,213,319,219,320,225,312,224,293,224,283,228,252,242,249,248,235,245,228,250,223,249,214,250,211,241,210,236,215,229,207,223,197,223,192,232,190,226,175,225,161,233,156,235,150,230,138,226,123,228,119,232,114,230,107,235,102,239,92,258,93" alt="Sagaing Region" href="#sagaing">
+
+        <area shape="poly"
+            coords="259,436,257,433,240,406,247,401,243,386,254,370,238,363,240,344,262,330,258,317,247,310,237,286,258,283,263,275,257,268,242,273,238,257,250,237,249,227,253,225,257,227,261,228,259,237,265,243,267,245,276,240,289,239,293,237,302,237,312,230,339,223,342,222,335,227,336,238,340,239,344,245,345,254,351,263,355,273,364,272,371,271,375,275,363,311,364,314,382,315,389,315,395,318,395,327,400,332,403,340,412,342,413,340,419,343,431,335,430,332,441,329,443,334,436,341,427,346,420,358,415,362,416,368,420,367,418,370,410,371,401,376,401,386,395,393,389,389,379,395,372,391,375,400,370,404,365,405,353,404,352,419,340,420,333,424,321,422,314,418,308,427,301,426,298,423,289,421,291,413,277,412,269,410,269,419,262,430,262,435"
+            alt="Shan State" href="#shan">
+
+        <area shape="poly" 
+            coords="253,437,253,433,249,429,251,421,237,406,241,400,246,400,240,386,251,376,250,368,237,363,236,347,249,336,263,328,257,317,248,316,239,302,237,287,239,281,250,282,263,274,254,270,244,274,237,271,236,260,240,253,238,249,229,253,228,264,227,287,223,288,226,302,225,314,224,320,210,320,202,323,194,344,171,354,174,365,186,372,186,374,187,374,180,382,184,387,209,380,209,374,216,376,216,396,219,403,218,413,220,417,216,431,216,435,235,436,243,435" 
+            alt="Mandalay Region" href="#mandalay">
+
+        <area shape="poly" 
+            coords="141,283,148,288,152,301,161,306,163,322,172,323,190,326,193,343,171,354,169,359,174,366,178,368,186,374,178,381,185,389,210,380,209,377,214,377,214,394,218,402,216,413,219,419,214,432,221,446,219,450,216,446,203,447,187,460,179,453,171,456,165,447,159,440,161,434,157,429,151,400,144,386,137,382,138,376,144,376,143,370,145,363,144,356,146,347,146,337,142,330,143,319,143,305,143,305" 
+            alt="Magway Region" href="#magway">
+
+        <area shape="poly" 
+            coords="136,376,138,376,142,376,144,372,142,365,144,359,141,354,144,351,144,334,141,327,142,313,139,287,141,281,145,274,149,254,148,244,151,242,151,234,140,232,134,227,123,229,122,223,119,230,113,257,115,268,103,274,103,309,86,312,81,319,85,349,92,353,94,358,104,359,110,369,114,372,125,375,127,364,130,367,132,372" 
+            alt="Chin State" href="#chin">
+
+        <area shape="poly"
+            coords="171,529,169,527,160,523,158,507,150,483,144,463,134,478,117,458,117,435,115,423,97,416,85,392,72,376,64,349,71,341,88,348,94,356,104,361,110,369,124,374,128,364,134,376,135,383,143,388,149,401,152,418,157,431,158,434,158,444,166,451,171,458,168,463,170,475,174,482,176,493,176,508,174,520,171,527"
+            alt="Rakhine State" href="#rakhine">
+
+        <area shape="poly"
+            coords="183,601,181,599,181,602,182,604,185,604,189,602,195,604,207,600,214,587,212,582,220,582,229,577,229,573,221,572,218,569,219,564,216,561,214,559,218,554,217,550,216,541,213,531,215,524,211,520,206,517,202,514,200,510,201,503,200,492,197,486,194,482,189,478,187,484,178,481,178,487,178,494,176,501,179,508,178,515,177,516,174,525,174,529,168,532,167,525,161,528,159,534,157,539,152,547,153,553,147,566,145,580,145,591,152,588,155,596,160,590,164,594,171,600,183,600,181,599"
+            alt="Ayeyarwady Region" href="#ayeyarwaddy">
+
+        
+        <area shape="poly" 
+            coords="231,570,235,564,223,572,218,565,215,555,218,547,213,537,212,522,224,510,230,524,234,543,240,549,248,547,257,549,255,554,253,559,244,563,239,565,225,571,225,571" 
+            href="#yangon" alt="Yangon Region">
+        <area shape="poly" 
+            coords="258,550,256,548,261,528,256,523,262,518,271,520,271,512,274,506,267,498,270,491,265,483,262,471,251,468,250,458,253,455,244,448,243,441,226,436,220,438,222,446,219,448,208,448,200,448,188,461,187,461,181,457,170,455,172,460,170,464,171,470,171,476,174,481,179,480,184,482,190,479,199,487,198,496,202,503,200,512,208,520,211,520,221,513,223,509,227,519,231,526,236,542,239,547,251,545,253,546,253,546" 
+            href="#bago" alt="Bago Region">
+        <area shape="poly" 
+            coords="326,881,295,870,303,833,283,776,306,745,297,721,319,706,296,689,300,635,306,630,313,630,320,636,359,680,365,701,358,714,375,741,385,775,374,794,349,828,342,857,341,860" 
+            href="#tanintharyi" alt="Tanintharyi Region">
+        <area shape="poly" 
+            coords="321,623,335,614,334,599,335,583,347,578,346,568,339,574,333,561,330,547,325,540,314,535,307,517,295,499,289,485,285,487,280,476,280,468,271,469,263,454,257,441,254,435,243,436,245,447,252,455,250,462,254,468,263,472,266,482,271,490,269,499,274,506,272,517,281,510,282,518,284,526,286,537,285,547,286,551,291,558,304,567,308,575,311,578,309,583,303,583,300,585,303,600,318,624" 
+            href="#kayin" alt="Kayin State">
+        <area shape="poly" 
+            coords="260,448,269,468,281,468,281,474,286,478,293,474,300,474,298,467,299,459,303,450,310,448,304,444,304,434,304,426,300,423,290,422,289,414,274,414,272,412,270,418,269,422,263,428,263,437,257,441,258,444" 
+            href="#kayah" alt="Kayah State">
+        <area shape="poly" 
+            coords="303,636,298,632,298,623,294,615,294,598,290,589,292,581,283,575,280,567,274,552,269,547,271,540,266,544,258,522,264,520,273,522,280,512,282,522,283,526,285,531,285,536,284,545,283,549,289,556,291,561,296,565,302,566,306,572,309,576,310,577,311,582,307,583,301,583,298,583,301,587,301,595,304,604,313,614,317,624,320,627,319,634,312,628,303,628,303,634,303,634" 
+            href="#mon" alt="Mon State">
+    </map>
+
+    <hr>
+
+    
+    <section id="kachin" class="region-info">
+        <h2>Kachin State</h2>
+        <img src="images/kachin.jpg" alt="Kachin" width="595" height="310">
+        <p><strong>Area &amp; Population</strong><br>
+            The Kachin State has common boundaries with the People's <br>
+            Republic of China in the east and north-east and India on the west. <br>
+            It adjoins Sagaing Division on the west and Shan State on the south. <br>
+            Its area is 34,379 square miles and its population is 903,982, <br>
+            comprising 18 Townships, 699 Wards and Village-Tracts, inhabited by <br>
+            Kachins, Shans, Myanmars, Jingphaws, Lisus, Atsis, Lashis, Rawans, Marus, Kadus and Kanans. <br></p>
+        <p><a href="https://www.myanmars.net/travel/kachin-state.html">More about Kachin State</a> | <a href="#top">Back
+                to Map</a></p>
+    </section>
+
+    <section id="sagaing" class="region-info">
+        <h2>Sagaing Region</h2>
+        <img src="images/sagaing.jpg" alt="Sagaing" width="535" height="310">
+        <p><strong>Area &amp; Population</strong><br>
+            Sagaing Region is situated in the north-western part of Myanmar. <br>
+            It is bounded on the north by Kachin State and Chin State, <br>
+            on the east by Shan State, on the south by Mandalay Region and Magway Region, and on the west by India. <br>
+            Its area is 93,527 square kilometers and its population is 5,325,237, <br>
+            comprising 34 Townships, 1,651 Wards and Village-Tracts, inhabited by Myanmar, Chins, Shans, Kachins, Nagas
+            and Gurkhas.</p>
+        <p><a href="https://www.myanmars.net/travel/sagaing-region.html">More about Sagaing Region</a> | <a
+                href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="shan" class="region-info">
+        <h2>Shan State</h2>
+        <img src="images/shan.jpg" alt="Shan" width="512" height="310">
+        <p> <strong>Area &amp; Population</strong> <br>
+            Shan State is the largest of the 14 administrative divisions of Myanmar. <br>
+            It shares international borders with China, Laos, and Thailand. <br>
+            The state covers an area of approximately 155,800 square kilometers and has a population of <br>
+            around 5.8 million people, comprising various ethnic groups including the Shan, Pa-O, Lahu, Akha, and
+            others. <br>
+            Shan State is known for its diverse culture, scenic landscapes, and significant agricultural activities,
+            <br>
+            particularly in the cultivation of tea, coffee, and various fruits. The state is also home to several
+            important <br>
+            historical and cultural sites, including ancient temples and traditional Shan villages. <br>
+        <p><a href="https://www.myanmars.net/travel/shan-state.html"> More about Shan State</a> | <a href="#top">Back to
+                Map</a></p>
+    </section>
+
+    <section id="mandalay" class="region-info">
+        <h2>Mandalay Region</h2>
+        <img src="images/mandalay.jpg" alt="Mandalay" width="489" height="310">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Mandalay Region is located in the central part of Myanmar. It is bordered by Sagaing <br>
+            Region to the northwest, Shan State to the east, Kayah State to the southeast, <br>
+            Bago Region to the south, and Magway Region to the west. The region covers <br>
+            an area of approximately 61,000 square kilometers and has a population of around <br>
+            6 million people, comprising various ethnic groups including the Bamar, Shan, Chin, and others. <br>
+            Mandalay Region is known for its rich cultural heritage, historical sites, and economic activities, <br>
+            particularly in agriculture, trade, and tourism. The region is home to the city of Mandalay, <br>
+            which is the second-largest city in Myanmar and a major cultural and economic hub. <br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/mandalay-region.html">More about MAndalay Region</a> | <a
+                href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="magway" class="region-info">
+        <h2>Magway Region</h2>
+        <img src="images/magway.jpg" alt="Magway Region" width="413" height="310">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Magway Region lies in central Myanmar along the middle Ayeyarwady valley. <br>
+            It covers roughly 44,800 km² and has a population of about 3.9 million. <br>
+            The region's economy is dominated by agriculture — especially sesame, groundnuts, <br>
+            beans, and pulses — and by oil extraction around Chauk and Mann. Major towns <br>
+            include Magway (the regional capital), Pakokku, Minbu, and Yenangyaung. <br>
+            The Ayeyarwady River and its irrigation networks are central to farming and inland transport. <br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/magway-region.html"> More about Magway Region</a> | <a
+                href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="chin" class="region-info">
+        <h2>Chin State</h2>
+        <img src="images/chin.jpg" alt="Chin State" width="600" height="300">
+        <p> <strong> Area &amp; Population</strong><br>
+            Chin State is located in the western part of Myanmar, sharing borders with India and Bangladesh. <br>
+            It covers an area of approximately 36,000 square kilometers and has a population of around 478,000 people,
+            <br>
+            comprising various ethnic groups including the Chin, Mizo, and others. <br>
+            The state is known for its mountainous terrain, rich cultural heritage, and diverse ethnic communities. <br>
+            Chin State is one of the least developed regions in Myanmar, with limited infrastructure and economic
+            activities. <br>
+            The economy is primarily based on agriculture, with many residents engaged in subsistence farming. <br>
+            Despite its challenges, Chin State is renowned for its natural beauty, traditional festivals, and warm
+            hospitality of its people. <br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/chin-state1.html"> More about Chin State</a> | <a href="#top">Back
+                to Map</a></p>
+    </section>
+
+    <section id="rakhine" class="region-info">
+        <h2>Rakhine State</h2>
+        <img src="images/rakhine.jpg" alt="Rakhine State" width="691" height="310">
+        <p> <strong> Area &amp; Population</strong> <br>
+            Rakhine State is located in the western part of Myanmar, bordered by the Bay of Bengal to the west. <br>
+            It covers an area of approximately 36,778 square kilometers and has a population of around 3.2 million
+            people, <br>
+            comprising various ethnic groups including the Rakhine, Rohingya, and others. <br>
+            The state is known for its rich cultural heritage, historical sites, and diverse ethnic communities. <br>
+            Rakhine State has faced significant challenges, including ethnic tensions and humanitarian issues. <br>
+            The economy is primarily based on agriculture, fishing, and trade, with Sittwe as its capital and main port
+            city. <br>
+            Despite its challenges, Rakhine State is renowned for its natural beauty, ancient temples, and vibrant
+            cultural traditions. <br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/rakhine-state.html"> More about Rakhine State</a> | <a
+                href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="ayeyarwaddy" class="region-info">
+        <h2>Ayeyarwady Region</h2>
+        <img src="images/ayeyarwaddy.jpg" alt="Ayeyarwaddy Region" width="540" height="400">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Ayeyarwady Region is located in the delta area of Myanmar, where the Ayeyarwady River meets the Andaman Sea.
+            <br>
+            It covers an area of approximately 35,140 square kilometers and has a population of around 6.2 million
+            people, <br>
+            comprising various ethnic groups including the Bamar, Karen, Rakhine, and others. <br>
+            The region is known for its fertile agricultural land, extensive river systems, and rich biodiversity. <br>
+            Ayeyarwady Region is a major rice-producing area and plays a crucial role in Myanmar's economy. <br>
+            The region is also prone to natural disasters such as cyclones and flooding due to its low-lying geography.
+            <br>
+            Despite these challenges, Ayeyarwady Region is renowned for its vibrant culture, traditional festivals, and
+            warm hospitality of its people. <br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/ayeyarwaddy-region.html">More about Ayeyarwaddy</a> |<a
+                href="#top">Back to Map</a></p>
+    </section>
+
+    <!-- kyan dr tway -->
+    <section id="yangon" class="region-info">
+        <h2>Yangon Region</h2>
+        <img src="images/yangon.jpg" alt="Yangon Region" width="595" height="317">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Yangon Region is located in the southern part of Myanmar, along the coast of the Andaman Sea. <br>
+            It covers an area of approximately 9,500 square kilometers and has a population of around 7.4 million people, <br>
+            comprising various ethnic groups including the Bamar, Chinese, Indian, and others. <br>
+            The region is known for its vibrant economy, diverse culture, and historical significance. <br>
+            Yangon, the largest city in Myanmar and the former capital, is located in this region and serves as the
+            economic and cultural hub of the country. <br>
+            Yangon Region is a major center for trade, commerce, and tourism, with a bustling port and numerous
+            attractions such as the Shwedagon Pagoda. <br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/yangon-region.html">More about Yangon Region</a> | <a
+                href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="bago" class="region-info">
+        <h2>Bago Region</h2>
+        <img src="images/bago.jpg" alt="Bago Region" width="465" height="310">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Bago Region is located in the southern central part of Myanmar, bordered by Magway Region, Mandalay Region, Kayin State, Mon State, and Yangon Region.<br>
+            It covers an area of approximately 39,400 square kilometers and has a population of around 4.8 million people.<br>
+            The region is known for its fertile plains, rice cultivation, and historical sites, including the ancient city of Bago.<br>
+            Bago Region is also home to diverse ethnic groups such as the Bamar, Karen, and Mon.<br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/bago-region.html">More about Bago Region</a> | <a href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="tanintharyi" class="region-info">
+        <h2>Tanintharyi Region</h2>
+        <img src="images/tanintharyi.jpg" alt="Tanintharyi Region" width="426" height="310">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Tanintharyi Region is located in the southernmost part of Myanmar, bordered by the Andaman Sea to the west and Thailand to the east.<br>
+            It covers an area of approximately 43,344 square kilometers and has a population of around 1.4 million people.<br>
+            The region is known for its long coastline, beautiful beaches, and rich biodiversity, including the Myeik Archipelago.<br>
+            Tanintharyi Region is also home to diverse ethnic groups such as the Bamar, Karen, and Mon.<br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/tanintharyi-region.html">More about Tanintharyi-region</a> | <a href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="kayin" class="region-info">
+        <h2>Kayin State</h2>
+        <img src="images/kayin.jpg" alt="Kayin State" width="600" height="400">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Kayin State is located in southeastern Myanmar, sharing a border with Thailand to the east.<br>
+            It covers an area of approximately 30,383 square kilometers and has a population of around 1.6 million people.<br>
+            The state is home to the Karen (Kayin) ethnic group and other minorities.<br>
+            Kayin State is known for its scenic mountains, caves, and cultural diversity.<br>
+            The economy is primarily based on agriculture, forestry, and cross-border trade.<br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/kayin-state.html">More about Kayin State</a> | <a href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="kayah" class="region-info">
+        <h2>Kayah State</h2>
+        <img src="images/kayah.jpg" alt="Kayah State" width="465" height="310">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Kayah State is located in eastern Myanmar, bordered by Shan State to the north and east, and Kayin State to the south.<br>
+            It covers an area of approximately 11,670 square kilometers and has a population of around 286,000 people.<br>
+            The state is home to the Kayah (Karenni) ethnic group and other minorities.<br>
+            Kayah State is known for its picturesque landscapes, traditional villages, and rich cultural heritage.<br>
+            The economy is primarily based on agriculture, handicrafts, and small-scale trade.<br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/kayah-state.html"></a> | <a href="#top">Back to Map</a></p>
+    </section>
+
+    <section id="mon" class="region-info">
+        <h2>Mon State</h2>
+        <img src="images/mon.jpg" alt="Mon State" width="465" height="310">
+        <p>
+            <strong>Area &amp; Population</strong><br>
+            Mon State is located in the southern part of Myanmar, bordered by the Andaman Sea to the west and Kayin State to the north.<br>
+            It covers an area of approximately 12,296 square kilometers and has a population of around 2 million people.<br>
+            The state is home to the Mon ethnic group as well as Bamar, Kayin, and other minorities.<br>
+            Mon State is known for its beautiful beaches, ancient pagodas, and vibrant cultural traditions.<br>
+            The economy is primarily based on agriculture, fishing, and rubber production.<br>
+        </p>
+        <p><a href="https://www.myanmars.net/travel/mon-state.html">More about Mon State</a> | <a href="#top">Back to Map</a></p>
+    </section>
+
+    <p id="top"><a href="#">↑ Back to Top</a></p>
+
+</body>
+
+</html>
